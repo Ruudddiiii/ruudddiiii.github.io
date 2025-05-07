@@ -1,83 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+  {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+</head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<body>
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+        <div class="site-info">
+          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+        <nav>
+          <a href="{{ site.baseurl }}/">Blog</a>
+          <a href="{{ site.baseurl }}/about">About</a>
+        </nav>
+      </header>
     </div>
+  </div>
 
-<!--     <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+  <!-- Education -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding: 2.5%;width:100%;vertical-align:middle">
+        <h2>Education</h2>
+      </td>
+    </tr>
+  </table>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+  <table style="width:100%;border:1px;border-spacing:5px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <!-- MNIT Jaipur -->
+    <tr>
+      <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/06/MNIT_Logo.png" alt="MNIT Jaipur Logo" style="padding-top:0px;padding-bottom:0px;width:auto; height:auto; max-width:100%;" />
+      </td>
+      <td style="padding:2.5%;width:67%;vertical-align:middle;min-width:120px;">
+        <h3>Malaviya National Institute of Technology Jaipur</h3>
+        2017 - 2021<br>
+        Bachelor of Technology in Electrical Engineering
+      </td>
+    </tr>
 
-    {% include analytics.html %} -->
-<!--   Education -->
-    
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tr>
-          <td style="padding: 2.5%;width:100%;vertical-align:middle">
-            <h2>Education</h2>
-          </td>
-        </tr>
-      </table>
-      
-      <table style="width:100%;border:1px;border-spacing:5px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tr>
-          <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
-            <img src="https://en.wikipedia.org/wiki/Malaviya_National_Institute_of_Technology,_Jaipur#/media/File:Mnit_logo.png" alt="College Logo" style="padding-top:0px;padding-bottom:0px;width:auto; height:auto; max-width:100%;" />
-          </td>
-          <td style="padding:2.5%;width:67%;vertical-align:middle;min-width:120px;">
-            <h3>Malaviya National Institute of Technology Jaipur</h3>
-            2017 - 2021<br>
-            Bachelor of Technology in Electrical Engineering
-          </td>
-          <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
-            <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg" alt="College Logo" style="padding-top:0px;padding-bottom:0px;width:auto; height:auto; max-width:100%;" />
-          </td>
-          <td style="padding:2.5%;width:67%;vertical-align:middle;min-width:120px;">
-            <h3>Indian Institute of Technology Delhi</h3>
-            2022 - 2024<br>
-            Masters of Technology in Control & Automation
-          </td>
-        </tr>
-      </table>
-
-    
-  </body>
+    <!-- IIT Delhi -->
+    <tr>
+      <td style="padding:2.5%;width:33%;vertical-align:middle;min-width:120px;" align="center">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg" alt="IIT Delhi Logo" style="padding-top:0px;padding-bottom:0px;width:auto; height:auto; max-width:100%;" />
+      </td>
+      <td style="padding:2.5%;width:67%;vertical-align:middle;min-width:120px;">
+        <h3>Indian Institute of Technology Delhi</h3>
+        2022 - 2024<br>
+        Master of Technology in Control & Automation
+      </td>
+    </tr>
+  </table>
+</body>
 </html>
