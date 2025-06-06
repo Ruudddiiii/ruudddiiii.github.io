@@ -35,67 +35,88 @@
     </div>
   </div>
 
-  
-    
-      <div class="container" style="margin-top: 40px;">
-  <h2 style="text-align: center;">About Me</h2>
-  <p style="max-width: 800px; margin: 0 auto; text-align: center;">
-    Hi! I'm an Electrical Engineer with a passion for automation, embedded systems, and smart technology. 
-    I completed my B.Tech from MNIT Jaipur and M.Tech from IIT Delhi. I enjoy coding, photography, 
-    and creating innovative projects during my free time.
-  </p>
-</div>
+  <!-- ABOUT ME SECTION -->
+  <div class="container" style="margin-top: 40px;">
+    <h2 style="text-align: center;">About Me</h2>
+    <table style="width:100%; max-width:800px; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
+            <tr style="padding:0px">
+              <td style="padding:2.5%; width:100%; vertical-align:middle">
+                <h1>Ruudddiiii</h1>
 
-<div id="main" role="main" class="container">
-  {{ content }}
-</div>
+                <p align="center">
+                  <strong>Email:</strong> ruudddiiii <em>at</em> gmail <em>dot</em> com
+                </p>
 
+                <hr>
 
-  
-<!--     College -->
-  
-     {% if page.url == "/" %}
-      <!-- College -->
-      <div class="container" style="margin-top: 40px;">
-        <h2 style="text-align: center;">Education</h2>
-    
-        <table style="width: 100%; max-width: 800px; margin: 0 auto; border-collapse: separate; border-spacing: 20px;">
-          <tr>
-            <td style="text-align: center; vertical-align: middle; width: 100px;">
-              <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/Mnit_logo.png" alt="MNIT Jaipur Logo" style="max-height: 70px; display: block; margin: auto;">
-            </td>
-            <td style="vertical-align: middle;">
-              <h3 style="margin: 0;">Malaviya National Institute of Technology Jaipur</h3>
-              <p style="margin: 4px 0 0;">2017 – 2021<br>Bachelor of Technology in Electrical Engineering</p>
-            </td>
-          </tr>
-    
-          <tr>
-            <td style="text-align: center; vertical-align: middle; width: 100px;">
-              <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg" alt="IIT Delhi Logo" style="max-height: 70px; display: block; margin: auto;">
-            </td>
-            <td style="vertical-align: middle;">
-              <h3 style="margin: 0;">Indian Institute of Technology Delhi</h3>
-              <p style="margin: 4px 0 0;">2022 – 2024<br>Master of Technology in Control & Automation</p>
-            </td>
-          </tr>
-        </table>
-      </div>
-    {% endif %}
+                <p>
+                  I am an Electrical Engineer with a strong passion for automation, embedded systems, and smart technology.
+                  I earned my <strong>B.Tech</strong> from <a href="https://mnit.ac.in/">MNIT Jaipur</a> and my <strong>M.Tech</strong> from <a href="https://home.iitd.ac.in/">IIT Delhi</a>, specializing in Control & Automation.
+                </p>
 
+                <p>
+                  My areas of interest include robotics, real-time systems, and developing tools that bridge software and hardware. 
+                  I also enjoy coding, photography, and working on innovative projects in my spare time.
+                </p>
 
-  <!-- Credits -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <hr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from  <a href="https://github.com/jekyll/jekyll?tab=readme-ov-file">Jekyll</a> 
-              </p>
-            </td>
-          </tr>
-        </table>
+                <p>
+                  Currently, I’m exploring ROS2-based multi-robot systems and designing frameworks for cooperative robotic behavior.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
 
+  <!-- MAIN CONTENT -->
+  <div id="main" role="main" class="container">
+    {{ content }}
+  </div>
+
+  <!-- EDUCATION SECTION ON HOMEPAGE -->
+  {% if page.url == "/" %}
+  <div class="container" style="margin-top: 40px;">
+    <h2 style="text-align: center;">Education</h2>
+    <table style="width: 100%; max-width: 800px; margin: 0 auto; border-collapse: separate; border-spacing: 20px;">
+      <tr>
+        <td style="text-align: center; vertical-align: middle; width: 100px;">
+          <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/Mnit_logo.png" alt="MNIT Jaipur Logo" style="max-height: 70px; display: block; margin: auto;">
+        </td>
+        <td style="vertical-align: middle;">
+          <h3 style="margin: 0;">Malaviya National Institute of Technology Jaipur</h3>
+          <p style="margin: 4px 0 0;">2017 – 2021<br>Bachelor of Technology in Electrical Engineering</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="text-align: center; vertical-align: middle; width: 100px;">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg" alt="IIT Delhi Logo" style="max-height: 70px; display: block; margin: auto;">
+        </td>
+        <td style="vertical-align: middle;">
+          <h3 style="margin: 0;">Indian Institute of Technology Delhi</h3>
+          <p style="margin: 4px 0 0;">2022 – 2024<br>Master of Technology in Control & Automation</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  {% endif %}
+
+  <!-- FOOTER / CREDITS -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <hr>
+      <td style="padding:0px">
+        <br>
+        <p style="text-align:center;font-size:small;">
+          Design and source code from <a href="https://github.com/jekyll/jekyll?tab=readme-ov-file">Jekyll</a> 
+        </p>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
