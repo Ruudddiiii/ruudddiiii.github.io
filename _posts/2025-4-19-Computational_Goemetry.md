@@ -9,4 +9,4 @@ This post includes my Master's thesis on formation and consensus using ROS2 and 
 
 [Download my Master's Thesis (PDF)](/Thesis.pdf)
 
-More can be found on this Repo - https://github.com/Ruudddiiii/TB3_Task
+[More can be found on this Repo](/https://github.com/Ruudddiiii/TB3_Task)
