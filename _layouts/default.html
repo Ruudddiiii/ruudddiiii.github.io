@@ -14,12 +14,11 @@
 
 <body>
 
-  <!-- Basic Top-Centered Navigation -->
-  <nav style="text-align: center; margin: 20px 0;">
-    <a href="{{ site.baseurl }}/" style="margin: 0 10px;">Home</a>
-    <a href="{{ site.baseurl }}/about" style="margin: 0 10px;">About</a>
-    <!-- Add more links here if needed -->
-  </nav>
+<nav style="width: 100%; text-align: center; margin: 20px 0;">
+  <a href="{{ site.baseurl }}/" style="margin: 0 10px; display: inline-block;">Home</a>
+  <a href="{{ site.baseurl }}/about" style="margin: 0 10px; display: inline-block;">About</a>
+</nav>
+
   
   <!-- Top section: Name, Email, Bio -->
 {% if page.url == "/" %}
