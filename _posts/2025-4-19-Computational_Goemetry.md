@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Master's Thesis on ROS2 Toolbox for Formation and Consensus Using Robots
+title: "Master's Thesis on ROS2 Toolbox for Formation and Consensus Using Robots"
 ---
 
 This post includes my Master's thesis on formation and consensus using ROS2 and multiple robots.
 
 ## 📄 View or Download Thesis
 
-[Download my Master's Thesis (PDF)](/Thesis.pdf)
-
-[More can be found on this Repo](/https://github.com/Ruudddiiii/TB3_Task)
+- [📥 Download my Master's Thesis (PDF)](/Thesis.pdf)
+- [🔗 View the GitHub Repository](https://github.com/Ruudddiiii/TB3_Task)
