@@ -14,10 +14,11 @@
 
 <body>
 
-    <!-- Navigation -->
-  <nav style="text-align: center; margin-bottom: 20px;">
-    <a href="{{ site.baseurl }}/">Home</a> |
-    <a href="{{ site.baseurl }}/about">About</a>
+  <!-- Navigation -->
+  <nav style="width: 100%; text-align: center; padding: 15px 0; background-color: #f8f8f8; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;">
+    <a href="{{ site.baseurl }}/" style="margin: 0 15px; text-decoration: none; font-weight: bold; color: #333;">Home</a>
+    <a href="{{ site.baseurl }}/about" style="margin: 0 15px; text-decoration: none; font-weight: bold; color: #333;">About</a>
+    <!-- Add more links as needed -->
   </nav>
   <!-- Top section: Name, Email, Bio -->
 {% if page.url == "/" %}
@@ -41,13 +42,6 @@
 </table>
 {% endif %}
 
-
-
-  <!-- Navigation -->
-<!--   <nav style="text-align: center; margin-bottom: 20px;">
-    <a href="{{ site.baseurl }}/">Home</a> |
-    <a href="{{ site.baseurl }}/about">About</a>
-  </nav> -->
 
   <!-- Main content (Markdown rendered via Jekyll) -->
   <div id="main" role="main" class="container">
