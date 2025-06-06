@@ -35,7 +35,12 @@
     <a href="{{ site.baseurl }}/about">About</a>
   </nav>
 
-  <!-- Education section only on homepage -->
+  <!-- Main content (Markdown rendered via Jekyll) -->
+  <div id="main" role="main" class="container">
+    {{ content }}
+  </div>
+
+    <!-- Education section only on homepage -->
   {% if page.url == "/" %}
   <div class="container" style="margin-top: 40px;">
     <h2 style="text-align: center;">Education</h2>
@@ -63,11 +68,6 @@
     </table>
   </div>
   {% endif %}
-
-  <!-- Main content (Markdown rendered via Jekyll) -->
-  <div id="main" role="main" class="container">
-    {{ content }}
-  </div>
 
   <!-- Footer -->
   <footer style="margin-top: 40px;">
